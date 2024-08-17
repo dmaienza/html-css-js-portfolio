@@ -150,10 +150,10 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  min-height: 96vh;
+  height: 96vh; /* Change from height to min-height */
   margin: 0 10rem;
   box-sizing: border-box;
-  position: relative;
+  min-height: fit-content;
 }
 
 .section-container {
@@ -290,7 +290,7 @@ section {
 .arrow {
   position: absolute;
   right: -5rem;
-  bottom: 2.5rem;
+  top: 10%;
 }
 
 .details-container {
@@ -314,6 +314,10 @@ section {
   margin: auto 0;
 }
 
+.text-container {
+  margin-top: 2rem;
+}
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -331,6 +335,8 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  /* max-height: calc(100% - 8rem);
+  overflow-y: auto; */
 }
 
 .article-container {
@@ -357,6 +363,7 @@ article .icon {
 
 #projects {
   position: relative;
+  height: fit-content;
 }
 
 .color-container {

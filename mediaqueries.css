@@ -1,4 +1,59 @@
+@media screen and (min-width: 2001px) {
+  body {
+    max-width: 1800px;
+    margin: 0 auto;
+  }
+  .experience-details-container,
+  .about-containers {
+    max-width: 1600px;
+    flex-wrap: wrap;
+  }
+  .section-container {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .experience-details-container {
+    max-width: 1600px;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
+  .about-containers {
+    max-width: 1600px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .details-container {
+    width: 30%;
+  }
+  .section-container {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .experience-details-container {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  .details-container {
+    width: 45%;
+  }
+  .section-container {
+    height: fit-content;
+  }
+}
+
 @media screen and (max-width: 1400px) {
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -6,8 +61,7 @@
   .about-containers {
     flex-wrap: wrap;
   }
-  #contact,
-  #projects {
+  .section-container {
     height: fit-content;
   }
 }
@@ -44,6 +98,10 @@
   }
   .about-containers {
     margin-top: 0;
+  }
+  #contact,
+  footer {
+    height: 40vh;
   }
 }
 
